@@ -8,7 +8,7 @@ export default {
         primary: "#F42e00",
       },
          fontFamily: {
-        poppins: ["Roboto", "sans-serif"],
+        poppins: ["Stolzl", "sans-serif"],
       },
     },
   },
