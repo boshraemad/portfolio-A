@@ -6,8 +6,8 @@ import { FaInstagram } from "react-icons/fa";
 export default function About() {
   return (
     <div className="absolute left-[50%] translate-x-[-50%]">
-      <h1 className='font-bold text-3xl text-center mt-6 lg:ml-11'>ABOUT</h1>
-      <p className="lg:w-[800px] w-[350px] lg:text-[18px] text-[10px] font-semibold text-gray-500 mt-32 text-center lg:leading-9">Hi, I’m Abdullah Emad, an architecture student passionate about design and creativity.
+      <h1 className='font-bold text-3xl text-center mt-6 lg:ml-11 md:ml-10'>ABOUT</h1>
+      <p className="lg:w-[800px] md:w-full  w-[350px] lg:text-[18px] md:text-[14px] text-[10px] font-semibold text-gray-500 mt-32 text-center lg:leading-9 md:leading-8">Hi, I’m Abdullah Emad, an architecture student passionate about design and creativity.
 I believe thoughtful design can shape better spaces and enhance how we live.
 My work blends functionality and aesthetics to create unique, inspiring solutions.</p>
       <div>
