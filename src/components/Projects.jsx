@@ -1,6 +1,7 @@
 import Card from "./Card"
 import {useEffect , useState} from "react";
 import Spinner from "./Spinner";
+import { supabase } from "../../supabase/supabase-client";
 
 export default function Projects() {
   const [projects , setProjects]=useState([]);
@@ -10,8 +11,7 @@ export default function Projects() {
     const fetchData=async()=>{
       try{
         setIsLoading(true);
-        const res = await fetch("http://localhost:8000/projects");
-        const data = await res.json();
+        const {data , error} = await supabase.from('projects').select("*");
         setProjects(data);
       }catch(error){
         console.log(error);

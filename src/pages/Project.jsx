@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import {useEffect , useState} from "react"
 import Spinner from "../components/Spinner";
+import { supabase } from "../../supabase/supabase-client";
 
 export default function Project() {
     const {id}=useParams();
@@ -11,9 +12,8 @@ export default function Project() {
         const fetchData=async()=>{
           try{
             setIsLoading(true);
-            const res = await fetch(`http://localhost:8000/projects/${id}`);
-            const data = await res.json();
-            setProject(data);
+            const {data, error} = await supabase.from('projects').select("*").eq("id" ,id);
+            setProject(data[0]);
           }catch(error){
             console.log(error);
           }finally{
