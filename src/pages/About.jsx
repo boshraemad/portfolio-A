@@ -6,7 +6,7 @@ import profile from "../assets/profile.jpg";
 
 export default function About() {
   return (
-    <div className="absolute left-[50%] translate-x-[-50%]">
+    <div className="flex items-center justify-center flex-col">
       <h1 className='font-bold text-3xl text-center mb-6'>ABOUT</h1>
       <div className="flex items-center justify-center mt-4">
         <img src={profile} alt="profile" className="lg:w-[300px] w-[250px]"/>

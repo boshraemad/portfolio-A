@@ -36,9 +36,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="lg:w-[45%] w-[70%] absolute left-[50%] translate-x-[-50%]">
+    <div className="w-full flex items-center justify-center flex-col">
       <h1 className="font-bold text-3xl text-center mt-6 mb-20">CONTACT</h1>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className="lg:w-[45%] w-[75%]">
         <input name="name"  className="bg-black w-full mb-6 p-3  placeholder:text-[#eee] caret-white accent-white text-white" placeholder="you name..." onChange={(e)=>setName(e.target.value)} value={name}/>
         <input name="email"  className="bg-black w-full mb-6 p-3  placeholder:text-[#eee] text-white" placeholder="your email address " required  onChange={(e)=>setEmail(e.target.value)} value={email}/>
         <textarea name="message" className="w-full bg-black p-3 h-[200px]  placeholder:text-[#eee] text-white" placeholder="Your message.."  onChange={(e)=>setMessage(e.target.value)} value={message}/>
