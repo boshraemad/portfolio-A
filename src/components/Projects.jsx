@@ -11,7 +11,7 @@ export default function Projects() {
     const fetchData=async()=>{
       try{
         setIsLoading(true);
-        const {data , error} = await supabase.from('projects').select("*");
+        const {data , error} = await supabase.from('projects').select("*").order('id', { ascending: true });
         setProjects(data);
       }catch(error){
         console.log(error);

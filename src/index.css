@@ -15,5 +15,9 @@
     .unactivenavlink{
         @apply  hover:text-primary
     }
+
+    .navlink{
+      @apply md:mb-0 mb-3 block
+    }
   
   }
