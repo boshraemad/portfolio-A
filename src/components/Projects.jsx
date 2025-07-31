@@ -7,9 +7,8 @@ export default function Projects() {
   useEffect(()=>{
     const fetchData=async()=>{
       try{
-        const res = await fetch("http://localhost:8000/projects");
+        const res = await fetch("https://abdullhemadportfolio.vercel.app/api/server/projects");
         const data = await res.json();
-        console.log(data);
         setProjects(data);
       }catch(error){
         console.log(error);
