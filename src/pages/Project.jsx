@@ -23,7 +23,7 @@ export default function Project() {
     
         fetchData();
       },[id])
-
+if(isLoading) return <div className="flex items-center justify-center w-full"><Spinner/></div>
   return (
     <div className="w-full">
         <div className="text-center">
