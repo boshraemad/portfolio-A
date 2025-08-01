@@ -7,6 +7,7 @@ export default function Card({title , date ,poster , id}) {
       src={poster} 
       className="w-full h-full object-cover transition-all duration-300 grayscale group-hover:grayscale-0" 
       alt={title}
+      loading="lazy"
     />
     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-40">
       <span className="text-white text-xl font-bold p-4 text-center z-10">

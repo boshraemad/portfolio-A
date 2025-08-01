@@ -31,7 +31,7 @@ if(isLoading) return <div className="flex items-center justify-center w-full"><S
         <p className="font-semibold text-gray-500 mt-6">{project.details}</p>
         </div>
         <div className={`w-full grid gap-2 mt-12 ${id === "6" || id==="5" ?  "lg:grid-cols-2" : "lg:grid-cols-1"} grid-cols-1`}>
-            {project?.projectImages?.map((image,index)=><div className=" w-full flex justify-center mb-5" key={index}><img src={image} alt="photo" className={`object-cover ${id === "7" ? "":"w-[85%]"}`}/></div>)}
+            {project?.projectImages?.map((image,index)=><div className=" w-full object-contain flex justify-center mb-5" key={index}><img src={image} alt="photo" className={`object-cover ${id === "7" ? "":"w-[85%]"}`} loading="lazy"/></div>)}
         </div>
     </div>
   )
