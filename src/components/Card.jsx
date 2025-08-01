@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 export default function Card({title , date ,poster , id}) {
   return (
 <Link to={`project/${id}`} className="block group">
-  <div className="relative overflow-hidden h-[350px]">
+  <div className="relative overflow-hidden h-[400px]">
     <img 
       src={poster} 
       className="w-full h-full object-cover transition-all duration-300 grayscale group-hover:grayscale-0" 
